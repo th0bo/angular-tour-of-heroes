@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HeroesModule } from './heroes/heroes.module';
-import { HeroesComponent } from './heroes/heroes.component';
 
 @NgModule({
   declarations: [AppComponent],
