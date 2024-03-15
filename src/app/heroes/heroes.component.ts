@@ -14,7 +14,6 @@ export class HeroesComponent {
     id: 0,
     name: 'WindStorm',
   };
-  selectedHero?: Hero;
 
   constructor(private heroService: HeroService, private messagesService: MessageService) {}
 
@@ -26,10 +25,5 @@ export class HeroesComponent {
 
   ngOnInit(): void {
     this.aknowledgeHeroes();
-  }
-
-  onSelect(hero: Hero): void {
-    this.messagesService.add(`Selected hero ${hero.id} - ${hero.name}.`);
-    this.selectedHero = hero;
   }
 }
